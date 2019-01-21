@@ -4,6 +4,9 @@ const socketIO = require('socket.io');
 const http = require('http');
 
 const publicPath = path.join(__dirname, '../public')
+
+console.log(publicPath);
+
 const port = process.env.PORT || 3000; // works for Heroku and locally
 const app = express();
 const server = http.createServer(app);
